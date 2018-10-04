@@ -19,6 +19,7 @@
     position: relative;
     z-index: 2;
 }
+/*background darkening in card */
 .card::before {
     width: 100%;
     height: 100%;
@@ -56,7 +57,7 @@
     background-color: #058cff;
 }
 .basic_sport {
-    background-image: url("..//images/ball1_1.png");
+    background-image: url("..//images/ball1.jpg");
 }
 .basic_sport .card_name,  .basic_sport.card::before {
     background-color: #db28b3;
