@@ -4,12 +4,53 @@
 	box-sizing: border-box;
 }
 
-
-.wraper {
+a { 
+    text-decoration: none;
+}
+h2 {
+    color: #99a0a8;
+}
+.wrapper {
     width: 1280px;
+    margin: 0 auto;
+
+    border: solid 2px red;
+}
+header {
+    height: 79px;
+    width: 100%;
+}
+.content {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 1126px;
+    margin-left: 88px;
+    /*align-items: center;*/
 }
 
+.menu {
+    display: flex; /*for  а -- height=100%*/
+    justify-content: space-between;
+    width: 688px;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #dde1e5;
+    font-family: "Open Sans", san-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    /*box-sizing: border-box;*/
 
+}
+.menu a:hover {
+    color: #d4d7da;
+    /*box-sizing: border-box;*/
+    border-bottom: solid 4px #fcd633;
+}
 .all_cards {
     display: flex;
     flex-wrap: wrap;
@@ -17,3 +58,20 @@
     padding-top: 10px;
 }
 
+
+
+/*body > header .content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+body > header .menu {
+    display: flex;
+}
+body > header a {
+    height: 100%;
+    color: #acacac;
+    display: flex;
+    align-items: center;
+}*/
