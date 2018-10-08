@@ -263,8 +263,9 @@ header {
     height: 479px;
     background-image: url("..//images/motivation_fon1.jpg");
     background-size: cover;
-
-                        border: solid 1px green;
+    padding-top: 65px;
+/*
+                        border: solid 1px green;*/
 }           
 .motiv_info {
     width: 680px;
@@ -273,12 +274,12 @@ header {
     position: relative;
 }
 .motiv_info h2 {
-    margin: 25px 0 23px 0;
+    margin: 23px 0;
 }
 .motiv_intro {
     font-size: 29px;
     letter-spacing: -3px;
-    margin: 92px 0 0;
+    margin: 30px 0 0;
 }
 .motiv_description {
     font-size: 18px;
@@ -286,8 +287,6 @@ header {
     letter-spacing: -1.3px;
     line-height: 1.25;
 }
-
-
 .motivation .btn {
     width: 190px;
     bottom: -90px;
@@ -298,10 +297,8 @@ header {
 }
 
 
-
-
+/*SECTION TIMETABLE */
 
 .timetable h2 {
-    color: #99a0a8;
-    
+    color: #99a0a8;    
 }
