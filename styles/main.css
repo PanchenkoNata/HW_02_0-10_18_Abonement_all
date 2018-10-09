@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-a { 
+a:not(footer  a) { 
     text-decoration: none;
 }
 h2 {
@@ -500,4 +500,58 @@ header {
 footer {
     height: 145px;
     background-color: #1c3144;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+
+footer a {
+    color: #1d8299;
+    font-size: 12px;
+}
+footer p {
+    color: #546673;
+    font-size: 12px;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.footer_info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 58%;
+    margin-left: 22px;
+}
+.about_site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 9%;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 176px;
+}
+.social div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #30618a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel i {
+    transform: rotate(115deg);
+}
+.tel span {
+    font-size: 31px;
+    letter-spacing: -3px;
+    color: #fefefe;
+    padding-left: 19px;
 }
