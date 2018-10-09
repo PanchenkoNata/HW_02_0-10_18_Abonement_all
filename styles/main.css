@@ -119,6 +119,9 @@ header {
 }
 .size3 {
     width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card_content {
     position: relative;
@@ -317,7 +320,7 @@ header {
     margin-bottom: 1px;
 }
 .timetable .card_content {
-    margin: 33px 0px 0 74px;
+    margin: -14px 0px 0 40px;
     width: 250px;
 }
 .timetable .card_name {
@@ -346,6 +349,7 @@ header {
 }
 .coach_time .coach {
     min-height: 84px;
+    align-items: stretch;
 }
 .coach_time .hour, .coach_time .coaches {
     box-sizing: padding-box;
@@ -380,8 +384,13 @@ header {
     font-size: 10px;
     margin-top: 5px
 }
+
+.coach.stick {
+    display: flex;
+    flex-wrap: wrap;
+}
 .coaches_timing {
-    /*position: relative;*/
+    /*padding: 0;*/
 }
 .coach_timing {
     height: 41px;
@@ -390,21 +399,105 @@ header {
 .coach_timing span {
     letter-spacing: 1.6px;
 }
-.coach_id_1 {
+.coach_id_1, .coach_id_7 {
     position: absolute;
     bottom: 21px;
     left: 71px;
     width: 708px;
 }
 .coach_id_2 {
-    position: absolute;
+    /*position: absolute;
     bottom: 21px;
-    left: 71px;
+    left: 71px;*/
     width: 425px;
+    margin: 20px 0px 0 70px;
 }
 .coach_id_3 {
-    position: absolute;
+    /*position: absolute;
     bottom: 21px;
-    left: 71px;
+    left: 71px;*/
     width: 425px;
+    margin: 80px 0px 0 355px;
+}
+
+
+
+
+/*GIFT*/
+
+.gift {
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 438px;
+    padding-top: 1px;
+}
+.gift_info {
+    width: 54%;
+    position: relative;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+.gift_info h2 {
+    color: #5e6a75;
+    letter-spacing: -4.6px;
+    margin: 70px 0 0;
+    position: relative;
+}
+
+.gift_description {
+    color: #5e6a75;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -1.3px;
+    line-height: 1.25;
+    margin: 26px 60px 0 0;
+}
+
+.gift .btn {
+    width: 186px;
+    bottom: 121px;
+    right: 105px;
+}
+.gift .btn::after {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #489fdb, #5f84be);
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: block;
+    content: " ";
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;
+    right: -15px;
+    z-index: 15;
+}
+.gift .btn button::after {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #3bb1e0, #3a85bd);
+    border-radius: 5px;
+    display: block;
+    content: " ";
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;
+    right: -15px;
+    z-index: 20;
+}
+.gift .btn button span {
+    padding-left: 15px;
+}
+
+.gift_img {
+    overflow: hidden;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 145px;
+    background-color: #1c3144;
 }
