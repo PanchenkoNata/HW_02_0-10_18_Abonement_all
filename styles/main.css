@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-a:not(footer  a) { 
+/*a:not(footer a) { 
+    text-decoration: none;
+}*/
+header a { 
     text-decoration: none;
 }
 h2 {
@@ -31,23 +34,22 @@ h2 {
     border: none;
     border-radius: 6px;
     position: relative;
-    z-index: 23;
+    z-index: 230;
 }
 
 .btn button span {
-    font-family: "Open Sans", san-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
-   /* text-transform: uppercase;*/
     color: #ffffff;
     position: relative;
-    z-index: 25;
+    z-index: 250;
 }
 
 .wrapper {
     width: 1280px;
     margin: 0 auto;
     color: #fefefe;
-    font-family: "Open Sans", san-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -73,16 +75,14 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
-    color: #dde1e5;
-    font-family: "Open Sans", san-serif;
+    color: #aab1b5;
+    font-family: "Open Sans", sans-serif;
     letter-spacing: -1px;
-    /*box-sizing: border-box;*/
-
+    border-bottom: solid 4px rgba(252, 214, 51, 0);
 }
 .menu a:hover {
-    color: #d4d7da;
-    /*box-sizing: border-box;*/
-    border-bottom: solid 4px #fcd633;
+    color: #858888;
+    border-bottom: solid 4px rgba(252, 214, 51, 1);
 }
 
 .all_cards {
@@ -92,11 +92,11 @@ header {
 }
 
 .card {
-    font-family: "Open Sans", san-serif;
+    font-family: "Open Sans", sans-serif;
     color: #fefefe;
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 20;
 }
 /*background darkening in card */
 .card::before {
@@ -107,7 +107,7 @@ header {
     opacity: 0.5;
     position: absolute;
     top: 0px;
-    z-index: 4;
+    z-index: 40;
 }
 .size1 {
     width: 50%;
@@ -125,7 +125,7 @@ header {
 }
 .card_content {
     position: relative;
-    z-index: 8;
+    z-index: 80;
 }
 .size1 .card_content {
     height: 417px;
@@ -136,13 +136,13 @@ header {
     margin: 33px 68px 24px 67px;
 }
 .child_card {
-    background-image: url("..//images/child_card.jpg");
+    background-image: url("../images/child_card.jpg");
 }
 .child_card .card_name, .child_card.card::before {
     background-color: #058cff;
 }
 .basic_sport {
-    background-image: url("..//images/ball1.jpg");
+    background-image: url("../images/ball1.jpg");
 }
 .basic_sport .card_name,  .basic_sport.card::before {
     background-color: #db28b3;
@@ -190,11 +190,13 @@ header {
     font-size: 54px;
     margin: 20px 0 21px -3px;
     padding-right: 126px;
+    height: 130px;
 }
 
 .size2 h2 {
     margin: 14px 0 0 -3px;
     padding-right: 0;
+    height: 50px;
 }
 .card_description {
     font-size: 19px;
@@ -226,7 +228,7 @@ header {
     transform: rotate(45deg);
     top: 6px;
     right: -15px;
-    z-index: 15;
+    z-index: 150;
 }
 .all_cards .btn button::after {
     width: 38px;
@@ -239,7 +241,7 @@ header {
     transform: rotate(45deg);
     top: 6px;
     right: -15px;
-    z-index: 20;
+    z-index: 200;
 }
 .all_cards .btn button span {
     padding-left: 15px;
@@ -255,14 +257,13 @@ header {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    z-index: 5;
+    z-index: 50;
 }
 .card_price span {
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 1.8px;
     color: #545628;
-    padding-top: 10px;
 }
 
 /*SECTION MOTIVATION*/
@@ -271,6 +272,7 @@ header {
     background-image: url("..//images/motivation_fon1.jpg");
     background-size: cover;
     padding-top: 65px;
+    position: relative;
 }           
 .motiv_info {
     width: 680px;
@@ -296,12 +298,41 @@ header {
     width: 190px;
     bottom: -90px;
     right: 244px;
+
 }
 .motivation .btn button span {
     padding-left: 0px;
 }
-
-
+.motiv_switch {
+    position: absolute;
+    right: 58px;
+    top: 0;
+    height: 100%;
+}
+.switch_items_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.switch_item {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 3px #87c6dc;
+    margin-bottom: 25px;
+}
+.switch_item:last-child {
+    margin-bottom: 0px;
+}
+.switch_item:hover {
+    background-color: #f5c800;
+    border: solid 4px #f0f0f0;
+}
+.switch_item a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 /*SECTION TIMETABLE */
 
 .timetable>h2 {
@@ -472,7 +503,7 @@ header {
     transform: rotate(45deg);
     top: 6px;
     right: -15px;
-    z-index: 15;
+    z-index: 150;
 }
 .gift .btn button::after {
     width: 38px;
@@ -485,7 +516,7 @@ header {
     transform: rotate(45deg);
     top: 6px;
     right: -15px;
-    z-index: 20;
+    z-index: 200;
 }
 .gift .btn button span {
     padding-left: 15px;
@@ -502,11 +533,8 @@ footer {
     background-color: #1c3144;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
-
-
 footer a {
     color: #1d8299;
     font-size: 12px;
@@ -514,44 +542,57 @@ footer a {
 footer p {
     color: #546673;
     font-size: 12px;
-    letter-spacing: -1px;
+    letter-spacing: -0.05em;
     margin: 0;
 }
 .footer_info {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
-    width: 58%;
-    margin-left: 22px;
+    margin-left: 122px;
 }
-.about_site {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 9%;
+.tel {
+    margin-right: 40px;
+}
+.tel i {
+    transform-origin: 50% 30% 0;
+    transform: rotate(115deg);
+}
+.tel a {
+    font-family: "Open Sans Condensed";
+    font-size: 31px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fefefe;
+    padding-left: 19px;
+}
+.copywrite {
+    margin-right: 70px;
 }
 .social {
     display: flex;
-    justify-content: space-between;
-    width: 176px;
+    justify-content: space-around;
+    
 }
 .social div {
     width: 40px;
     height: 40px;
+    margin-right: 28px;
     border-radius: 50%;
     background-color: #30618a;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.tel i {
-    transform: rotate(115deg);
+.about_site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 12%;
+    text-align: right;
+    margin-right: 103px;
 }
-.tel span {
-    font-size: 31px;
-    letter-spacing: -3px;
-    color: #fefefe;
-    padding-left: 19px;
+.about_site p  {
+    margin-bottom: 5px;
 }
