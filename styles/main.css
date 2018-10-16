@@ -24,6 +24,9 @@ h2 {
     padding: 1px;
     border-radius: 7px;
 }
+.btn img {
+    height: 30px;
+}
 .btn button {
     width: 100%;
     height: 100%;
@@ -39,6 +42,15 @@ h2 {
     color: #ffffff;
     position: relative;
     z-index: 250;
+}
+.btn.buy button span::before {
+    display: inline-block;
+    content: url(../images/shopping-cart.svg);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -8px;
+    top: 2px;
 }
 
 .wrapper {
@@ -373,7 +385,7 @@ header {
 }
 .coach_time .time, .coach_time .coach {
     display: flex;   
-                flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 .coach_time .hour, .coach_time .coaches {
     box-sizing: padding-box;
@@ -389,7 +401,7 @@ header {
 .coach_time .coaches {
     background-color: #ffffff;
 }
-.coach_time .coaches .btn {
+.coaches .btn {
     position: relative;
 }
 .coach_time .hour:first-child, .coach_time .coaches:first-child {
@@ -417,7 +429,7 @@ header {
     letter-spacing: 1.6px;
 }
 .coach_id_1, .coach_id_7 {
-   width: 707px;
+    width: 707px;
     margin: 20px 0px 20px 70px;
 }
 .coach_id_2 {
