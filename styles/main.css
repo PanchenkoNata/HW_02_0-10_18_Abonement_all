@@ -522,6 +522,19 @@ header {
 .gift_img {
     overflow: hidden;
 }
+.gift_img svg g path:first-child {
+    fill: #417575;
+}
+.gift_img svg g path:first-child:hover{
+    fill: #00aaaa;
+}
+.gift_img svg g path:nth-child(n+1) {
+    fill: #417575;
+}
+.gift_img svg g path:last-child:hover{
+    fill: #00aaaa;
+}
+
 
 /*FOOTER*/
 
