@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-/*a:not(footer a) { 
-    text-decoration: none;
-}*/
 header a { 
     text-decoration: none;
 }
@@ -36,7 +33,6 @@ h2 {
     position: relative;
     z-index: 230;
 }
-
 .btn button span {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -63,7 +59,6 @@ header {
     height: 100%;
     width: 1126px;
     margin-left: 88px;
-    /*align-items: center;*/
 }
 
 .menu {
@@ -98,7 +93,7 @@ header {
     position: relative;
     z-index: 20;
 }
-/*background darkening in card */
+/*background darkening of card */
 .card::before {
     width: 100%;
     height: 100%;
@@ -119,6 +114,7 @@ header {
 }
 .size3 {
     width: 28%;
+    min-height: 124px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,10 +160,10 @@ header {
 }
 
 /*info*/
+
 .info {
     width: 360px;
 }
-
 .card_name {
     font-size: 18px;
     font-weight: 700;
@@ -192,7 +188,6 @@ header {
     padding-right: 126px;
     height: 130px;
 }
-
 .size2 h2 {
     margin: 14px 0 0 -3px;
     padding-right: 0;
@@ -267,6 +262,7 @@ header {
 }
 
 /*SECTION MOTIVATION*/
+
 .motivation {
     height: 479px;
     background-image: url("..//images/motivation_fon1.jpg");
@@ -333,6 +329,7 @@ header {
     height: 100%;
     width: 100%;
 }
+
 /*SECTION TIMETABLE */
 
 .timetable>h2 {
@@ -342,6 +339,7 @@ header {
 }
 .timetable_for_card {
     display: flex;
+                   flex-wrap: nowrap;
 }
 .timetable_for_card h2 {
     font-size: 13px;
@@ -351,7 +349,7 @@ header {
     margin-bottom: 1px;
 }
 .timetable .card_content {
-    margin: -14px 0px 0 40px;
+    margin: 0px 0px 0 50px;
     width: 250px;
 }
 .timetable .card_name {
@@ -372,19 +370,14 @@ header {
 .coach_time {
     width: 72%;
     border-top: solid 1px #e5e5e5;
-    position: relative;
 }
-
 .coach_time .time, .coach_time .coach {
     display: flex;   
-}
-.coach_time .coach {
-    min-height: 84px;
-    align-items: stretch;
+                flex-wrap: nowrap;
 }
 .coach_time .hour, .coach_time .coaches {
     box-sizing: padding-box;
-    width: 80px;
+    width: 7.69%;
     border-right: solid 1px #e5e5e5;
     border-top: solid 1px #f1f1f1;
 }
@@ -392,11 +385,12 @@ header {
     text-align: center;
     height: 60px;
     background-color: #eeeeee;
-    border-right: solid 1px #e5e5e5;
-    border-top: solid 1px #f1f1f1;
 }
 .coach_time .coaches {
     background-color: #ffffff;
+}
+.coach_time .coaches .btn {
+    position: relative;
 }
 .coach_time .hour:first-child, .coach_time .coaches:first-child {
     border-left: solid 1px #f1f1f1;
@@ -415,14 +409,6 @@ header {
     font-size: 10px;
     margin-top: 5px
 }
-
-.coach.stick {
-    display: flex;
-    flex-wrap: wrap;
-}
-.coaches_timing {
-    /*padding: 0;*/
-}
 .coach_timing {
     height: 41px;
     padding: 12px 0 0 18px;
@@ -431,27 +417,29 @@ header {
     letter-spacing: 1.6px;
 }
 .coach_id_1, .coach_id_7 {
-    position: absolute;
-    bottom: 21px;
-    left: 71px;
-    width: 708px;
+   width: 707px;
+    margin: 20px 0px 20px 70px;
 }
 .coach_id_2 {
-    /*position: absolute;
-    bottom: 21px;
-    left: 71px;*/
-    width: 425px;
-    margin: 20px 0px 0 70px;
+    width: 353px;
+    margin: 25px 0px 0 70px;
 }
 .coach_id_3 {
-    /*position: absolute;
-    bottom: 21px;
-    left: 71px;*/
-    width: 425px;
-    margin: 80px 0px 0 355px;
+    width: 423px;
+    margin: 21px 0px 22px 354px;
 }
-
-
+.coach_id_4 {
+    width: 390px;
+    margin: 22px 0px 0 33px;
+}
+.coach_id_5 {
+    width: 282px;
+    margin: 21px 0px 0 283px;
+}
+.coach_id_6 {
+    width: 353px;
+    margin: 22px 0px 24px 495px;
+}
 
 
 /*GIFT*/
@@ -469,14 +457,12 @@ header {
     margin-left: 90px;
     margin-top: 40px;
 }
-
 .gift_info h2 {
     color: #5e6a75;
     letter-spacing: -4.6px;
     margin: 70px 0 0;
     position: relative;
 }
-
 .gift_description {
     color: #5e6a75;
     font-size: 18px;
@@ -485,7 +471,6 @@ header {
     line-height: 1.25;
     margin: 26px 60px 0 0;
 }
-
 .gift .btn {
     width: 186px;
     bottom: 121px;
