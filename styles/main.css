@@ -351,7 +351,7 @@ header {
 }
 .timetable_for_card {
     display: flex;
-                   flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 .timetable_for_card h2 {
     font-size: 13px;
@@ -383,13 +383,13 @@ header {
     width: 72%;
     border-top: solid 1px #e5e5e5;
 }
-.coach_time .time, .coach_time .coach {
+.coach_time .time {
     display: flex;   
     flex-wrap: nowrap;
 }
-.coach_time .hour, .coach_time .coaches {
+.coach_time .hour {
     box-sizing: padding-box;
-    width: 7.69%;
+    width: 7.7%;
     border-right: solid 1px #e5e5e5;
     border-top: solid 1px #f1f1f1;
 }
@@ -400,14 +400,23 @@ header {
 }
 .coach_time .coaches {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/line_vert.svg");
+    background-position: -1px top ;
+    background-size: 7.7% auto;
 }
 .coaches .btn {
     position: relative;
+    margin-top: 20px;
 }
-.coach_time .hour:first-child, .coach_time .coaches:first-child {
+.coach_time .coaches .btn:last-child {
+    margin-bottom: 20px;
+}
+.coach_time .hour:first-child {
     border-left: solid 1px #f1f1f1;
 }
-.coach_time .hour:last-child, .coach_time .coaches:last-child {
+.coach_time .hour:last-child {
     border-right: 0;
 }
 .coach_time .from, .coach_time .to {
@@ -428,31 +437,38 @@ header {
 .coach_timing span {
     letter-spacing: 1.6px;
 }
-.coach_id_1, .coach_id_7 {
-    width: 707px;
-    margin: 20px 0px 20px 70px;
-}
-.coach_id_2 {
-    width: 353px;
-    margin: 25px 0px 0 70px;
-}
-.coach_id_3 {
-    width: 423px;
-    margin: 21px 0px 22px 354px;
-}
-.coach_id_4 {
-    width: 390px;
-    margin: 22px 0px 0 33px;
-}
-.coach_id_5 {
+
+.linght_4_00 {
     width: 282px;
-    margin: 21px 0px 0 283px;
 }
-.coach_id_6 {
+.linght_5_00 {
     width: 353px;
-    margin: 22px 0px 24px 495px;
+}
+.linght_5_30 {
+    width: 390px;
+}
+.linght_6_00 {
+    width: 423px;
+}
+.linght_10_00 {
+    width: 707px;
 }
 
+.time_start_09_30 {
+    margin-left: 34px;
+}
+.time_start_10_00 {
+    margin-left: 71px;
+}
+.time_start_13_00 {
+    margin-left: 284px;
+}
+.time_start_14_00 {
+    margin-left: 355px;
+}
+.time_start_16_00 {
+    margin-left: 496px;
+}
 
 /*GIFT*/
 
