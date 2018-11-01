@@ -305,7 +305,7 @@ body {
         bottom: 2.9vw;
     }
 }
-/*@media only screen and (min-width: 1401px) {
+@media only screen and (min-width: 1401px) {
     .cards__item {
         width: 33.333333%;
     }
@@ -327,9 +327,9 @@ body {
     .cards__item:nth-child(-n+3) .cards__item-amount {
         bottom: 2.9vw;
     }
-}*/
+}
 
-/*@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2200px) {
     .cards__item {
         width: 25%;
     }
@@ -351,9 +351,9 @@ body {
     .cards__item:nth-child(-n+4) .cards__item-amount {
         bottom: 2.9vw;
     }
-}*/
+}
 
-/*@media only screen and (min-width: 2200px) {
+@media only screen and (min-width: 3200px) {
     .cards__item {
         width: 16.6666667%;
     }
@@ -375,23 +375,9 @@ body {
     .cards__item:nth-child(-n+6) .cards__item-amount {
         bottom: 2.9vw;
     }
-}*/
-
-
-
-
-
-
-
-
-
-.size3 {
-    width: 28%;
-    min-height: 124px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+
 
 
 
