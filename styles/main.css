@@ -291,20 +291,3 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-.size3 {
-    width: 28%;
-    min-height: 124px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
